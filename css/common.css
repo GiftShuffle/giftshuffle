@@ -58,3 +58,10 @@
 .toastMsg{
     margin: 0 auto;
 }
+nav ul a.waves-light{
+    margin-left: .5em !important;
+    margin-right: .5em !important;
+}
+.mx100w{
+    max-width: 100%;
+}
