@@ -40,9 +40,9 @@
       <div class="nav-wrapper brown">
         <a href="index.html" class="left ex-text-darkbrown ex-logo padding-side-s">Shuffle</a>
         <ul id="nav-mobile" class="right">
-          <li class="padding-left-0"><a href="luckydraw.html"
+          <li class="padding-left-0"><a id="luckyDrawBtn" href="luckydraw.html"
               class="ex-color-orange waves-effect waves-light btn padding-side-s">Lucky Draw</a></li>
-          <li class="padding-left-0"><a href="shuffle.html"
+          <li class="padding-left-0"><a id="shuffleBtn" href="shuffle.html"
               class="ex-color-orange waves-effect waves-light btn padding-side-s">Gift Shuffle</a></li>
         </ul>
       </div>
@@ -155,6 +155,13 @@
   </footer>
   <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!-- Sis Testing Start -->
+  <script type="text/javascript">
+    $('#shuffleBtn').click(function() {
+      fbq('track', 'Visit Shuffle Page', {currency: "USD", value: 30.00});
+    });
+  </script>
+  <!-- Sis Testing End -->
 </body>
 
 </html>
